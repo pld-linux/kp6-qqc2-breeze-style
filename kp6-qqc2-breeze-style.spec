@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeplasmaver	6.0.0
+%define		kdeplasmaver	6.0.1
 %define		qtver		5.15.2
 %define		kpname		qqc2-breeze-style
 
 Summary:	QQC2StyleBridge
 Name:		kp6-%{kpname}
-Version:	6.0.0
+Version:	6.0.1
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	f250350b7fa2ff6f28f88233955c5638
+# Source0-md5:	e7dab525b85d5a92ebbc0608a6ac731d
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Quick-devel >= %{qtver}
@@ -157,4 +157,4 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/qt6/qml/org/kde/breeze/impl/libBreezeImpl.so
 %{_libdir}/qt6/qml/org/kde/breeze/kde-qmlmodule.version
 %attr(755,root,root) %{_libdir}/qt6/qml/org/kde/breeze/libBreezeStyle.so
-%{_libdir}/qt6/qml/org/kde/kirigami/styles/org.kde.breeze/AbstractApplicationHeader.qml
+#%{_libdir}/qt6/qml/org/kde/kirigami/styles/org.kde.breeze/AbstractApplicationHeader.qml
