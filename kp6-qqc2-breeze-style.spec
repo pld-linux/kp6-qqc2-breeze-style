@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeplasmaver	6.3.5
+%define		kdeplasmaver	6.4.0
 %define		qtver		5.15.2
 %define		kpname		qqc2-breeze-style
 
 Summary:	QQC2StyleBridge
 Name:		kp6-%{kpname}
-Version:	6.3.5
+Version:	6.4.0
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	d54d5abee1e908bb45b771dd8d560b85
+# Source0-md5:	a77baaa44872719a829439f9140a72c8
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Quick-devel >= %{qtver}
@@ -87,6 +87,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/qt6/qml/org/kde/breeze/impl/SliderGroove.qml
 %{_libdir}/qt6/qml/org/kde/breeze/impl/SliderHandle.qml
 %{_libdir}/qt6/qml/org/kde/breeze/impl/SpinBoxIndicator.qml
+%{_libdir}/qt6/qml/org/kde/breeze/impl/StandardRectangle.qml
 %{_libdir}/qt6/qml/org/kde/breeze/impl/SwitchIndicator.qml
 %{_libdir}/qt6/qml/org/kde/breeze/impl/TextEditBackground.qml
 %{_libdir}/qt6/qml/org/kde/breeze/impl/qmldir
