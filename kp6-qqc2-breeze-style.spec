@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeplasmaver	6.4.5
+%define		kdeplasmaver	6.5.0
 %define		qtver		5.15.2
 %define		kpname		qqc2-breeze-style
 
 Summary:	QQC2StyleBridge
 Name:		kp6-%{kpname}
-Version:	6.4.5
-Release:	2
+Version:	6.5.0
+Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	0eee5c6af3d56dc4d1f9ee18648dcb21
+# Source0-md5:	f3175779b9d05fdf8a6d1e2f6c8c33cc
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Quick-devel >= %{qtver}
@@ -94,7 +94,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/qt6/qml/org/kde/breeze/impl/qmldir
 %{_libdir}/qt6/qml/org/kde/breeze/qmldir
 %{_libdir}/cmake/QQC2BreezeStyle
-%attr(755,root,root) %{_libdir}/qt6/plugins/kf6/kirigami/platform/org.kde.breeze.so
+%{_libdir}/qt6/plugins/kf6/kirigami/platform/org.kde.breeze.so
 %{_libdir}/qt6/qml/org/kde/breeze/AbstractButton.qml
 %{_libdir}/qt6/qml/org/kde/breeze/ApplicationWindow.qml
 %{_libdir}/qt6/qml/org/kde/breeze/BreezeStyle.qmltypes
@@ -157,7 +157,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/qt6/qml/org/kde/breeze/impl/Theme.qml
 %{_libdir}/qt6/qml/org/kde/breeze/impl/Units.qml
 %{_libdir}/qt6/qml/org/kde/breeze/impl/kde-qmlmodule.version
-%attr(755,root,root) %{_libdir}/qt6/qml/org/kde/breeze/impl/libBreezeImpl.so
+%{_libdir}/qt6/qml/org/kde/breeze/impl/libBreezeImpl.so
 %{_libdir}/qt6/qml/org/kde/breeze/kde-qmlmodule.version
-%attr(755,root,root) %{_libdir}/qt6/qml/org/kde/breeze/libBreezeStyle.so
+%{_libdir}/qt6/qml/org/kde/breeze/libBreezeStyle.so
 #%{_libdir}/qt6/qml/org/kde/kirigami/styles/org.kde.breeze/AbstractApplicationHeader.qml
