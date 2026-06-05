@@ -42,6 +42,17 @@ experience.
 The performance, loading times and RAM usage should be generally
 competitive with the Qt Fusion and Material QQC2 styles.
 
+%description -l pl.UTF-8
+To jest czysty styl Qt Quick/Kirigami Qt Quick Controls. W odróżnieniu
+do QQC2-Desktop-Style, nie wymaga Qt Widgets ani systemowego QStyle.
+Wygląda jak KDE Visual Design Group's vision dla Breeze.
+
+Zachowuje się podobnie to styli Qt Basic, Fusion i Material QQC2, ale
+z różnymi dodatkowymi możliwościami.
+
+Wydajność, czasy ładowania i zużycie pamięci są porównywalne do Qt
+Fusion i Material QQC2.
+
 %prep
 %setup -q -n %{kpname}-%{version}
 
